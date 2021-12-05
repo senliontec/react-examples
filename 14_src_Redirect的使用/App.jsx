@@ -4,7 +4,7 @@ import { Route, Switch, Redirect } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Header from './component/Header'
-import MynavLink from './component/MyNavLink'
+import MyNavLink from './component/MyNavLink'
 
 export default class App extends Component {
     render() {
@@ -19,8 +19,8 @@ export default class App extends Component {
                 <div class="row">
                     <div class="col-xs-2 col-xs-offset-2">
                         <div class="list-group">
-                            <MynavLink to="/about"> About </MynavLink >
-                            <MynavLink to="/home"> Home </MynavLink >
+                            <MyNavLink to="/about"> About </MyNavLink >
+                            <MyNavLink to="/home"> Home </MyNavLink >
                         </div>
                     </div>
                     <div class="col-xs-6">
