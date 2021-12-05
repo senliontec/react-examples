@@ -18,19 +18,17 @@ export default class App extends Component {
 
                 <div class="row">
                     <div class="col-xs-2 col-xs-offset-2">
-                        <div class="list-group">
-                            <MynavLink to="/about"> About </MynavLink >
-                            <MynavLink to="/home"> Home </MynavLink >
-                        </div>
+                        <MynavLink to="/atguigu/about">About</MynavLink>
+                        <MynavLink to="/atguigu/home">Home</MynavLink>
                     </div>
-                    <div class="col-xs-6">
-                        <div class="panel">
-                            <div class="panel-body">
-                                <Switch>
-                                    <Route path="/about" component={About} />
-                                    <Route path="/home" component={Home} />
-                                </Switch>
-                            </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="panel">
+                        <div class="panel-body">
+                            <Switch>
+                                <Route path="/atguigu/about" component={About} />
+                                <Route path="/atguigu/home" component={Home} />
+                            </Switch>
                         </div>
                     </div>
                 </div>
