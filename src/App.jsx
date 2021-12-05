@@ -26,11 +26,13 @@ export default class App extends Component {
                     <div class="col-xs-6">
                         <div class="panel">
                             <div class="panel-body">
+
                                 <Switch>
-                                    <Route exact={true} path="/about" component={About} />
-                                    <Route exact={true} path="/home" component={Home} />
+                                    <Route path="/about" component={About} />
+                                    <Route path="/home" component={Home} />
                                     <Redirect to="/about" />
                                 </Switch>
+
                             </div>
                         </div>
                     </div>
