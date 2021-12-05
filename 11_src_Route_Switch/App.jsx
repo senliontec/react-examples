@@ -10,21 +10,21 @@ export default class App extends Component {
     render() {
         return (
             <div>
-                <div class="row">
-                    <div class="col-xs-offset-2 col-xs-8">
+                <div className="row">
+                    <div className="col-xs-offset-2 col-xs-8">
                         <Header />
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-xs-2 col-xs-offset-2">
+                <div className="row">
+                    <div className="col-xs-2 col-xs-offset-2">
                         <MyNavLink to="/atguigu/about">About</MyNavLink>
                         <MyNavLink to="/atguigu/home">Home</MyNavLink>
                     </div>
                 </div>
-                <div class="col-xs-6">
-                    <div class="panel">
-                        <div class="panel-body">
+                <div className="col-xs-6">
+                    <div className="panel">
+                        <div className="panel-body">
                             <Switch>
                                 <Route path="/atguigu/about" component={About} />
                                 <Route path="/atguigu/home" component={Home} />
