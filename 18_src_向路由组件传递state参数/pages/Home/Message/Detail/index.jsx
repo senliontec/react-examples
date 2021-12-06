@@ -14,11 +14,11 @@ export default class Detail extends Component {
 
         console.log(this.props)
 
-        const { id, title } = this.props.location.state
+        const { id, title } = this.props.location.state || {}
 
         const findResult = DetailData.find((detailObj) => {
             return detailObj.id === id;
-        })
+        }) || {}
 
         return (
             <ul>
